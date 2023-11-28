@@ -20,4 +20,8 @@ func main() {
 	fmt.Printf("Математичне сподівання = %.3f\n", expectation)
 	fmt.Printf("Дисперсія = %.3f\n", dispersion)
 	fmt.Printf("Середньоквадратичне відхилення = %.3f\n", deviation)
+
+	params2 := map[string]float64{"a": 1664525, "c": 1013904223, "m": 32, "min": 0, "max": 150, "length": 20000}
+	randoms2 := random.RandomFloat(params2)
+	fmt.Println("************\nПсевдовипадкові дійсні значення = ", randoms2)
 }

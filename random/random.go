@@ -1,7 +1,6 @@
 package random
 
 import (
-	"fmt"
 	"math"
 	"time"
 )
@@ -24,6 +23,5 @@ func Random(p paramMap) []int64 {
 
 		numbers[i] = x
 	}
-	fmt.Println(len(numbers))
 	return numbers
 }
